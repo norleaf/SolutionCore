@@ -1,6 +1,7 @@
 ﻿
 @{
     ViewBag.Title = "Firmaer";
+    var companies = (List<SolutionCore.Models.Company>)Model;
 }
 
 <h2>@ViewBag.Title</h2>
@@ -24,3 +25,10 @@
         </div>
     </div>
 </div>
+
+@foreach (var company in Model)
+{
+    <div>
+        <button type="button" class="text" data-toggle="collapse" data-target=".firm">@company.Name, @company.Address</button>
+    </div>
+}
