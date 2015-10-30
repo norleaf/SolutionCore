@@ -78,3 +78,5 @@ C:\Users\Hans\Documents\GitHub\SolutionCore\SolutionCore\SolutionCore\bin\Newton
 C:\Users\Hans\Documents\GitHub\SolutionCore\SolutionCore\SolutionCore\obj\Debug\SolutionCore.csprojResolveAssemblyReference.cache
 C:\Users\Hans\Documents\GitHub\SolutionCore\SolutionCore\SolutionCore\obj\Debug\SolutionCore.dll
 C:\Users\Hans\Documents\GitHub\SolutionCore\SolutionCore\SolutionCore\obj\Debug\SolutionCore.pdb
+C:\Users\Hans\Documents\GitHub\SolutionCore\SolutionCore\SolutionCore\bin\System.Web.Http.dll
+C:\Users\Hans\Documents\GitHub\SolutionCore\SolutionCore\SolutionCore\bin\System.Net.Http.Formatting.dll
