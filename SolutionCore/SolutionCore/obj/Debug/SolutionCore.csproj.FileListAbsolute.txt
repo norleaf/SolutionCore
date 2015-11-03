@@ -124,3 +124,4 @@ C:\Users\Mads Morsing\Desktop\SolutionCore\SolutionCore\SolutionCore\SolutionCor
 C:\Users\Mads Morsing\Desktop\SolutionCore\SolutionCore\SolutionCore\SolutionCore\obj\Debug\SolutionCore.csprojResolveAssemblyReference.cache
 C:\Users\Mads Morsing\Desktop\SolutionCore\SolutionCore\SolutionCore\SolutionCore\obj\Debug\SolutionCore.dll
 C:\Users\Mads Morsing\Desktop\SolutionCore\SolutionCore\SolutionCore\SolutionCore\obj\Debug\SolutionCore.pdb
+C:\Users\Rauko\Documents\GitHub\SolutionCore\SolutionCore\SolutionCore\obj\Debug\SolutionCore.csprojResolveAssemblyReference.cache
