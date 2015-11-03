@@ -8,25 +8,19 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
     <body>
-        
-        @*JUMBOTRON *@
-<div class="jumbotron">
-    <img src="~/Content/images/logo.jpg" />
-</div>
-
-        <div class="navbar navbar-left navbar-default">
-            <div class="container">
-                <div class="navbar-left">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    @Html.ActionLink("Solution Core", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                    <a class="navbar-brand" href="#">SolutionCore</a>
                 </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-left">
-                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active">@Html.ActionLink("Home", "Index", "Home")</li>
                         <li>@Html.ActionLink("Firma Data", "CompView", "Companies")</li>
                         <li>@Html.ActionLink("About", "About", "Home")</li>
                         <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
@@ -35,9 +29,31 @@
                         <li>@Html.ActionLink("TEST", "About", "Home")</li>
                         <li>@Html.ActionLink("TEST", "Contact", "Home")</li>
                     </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
                 </div>
             </div>
+        </nav>
+        <div style="padding-top:20px;">
+
         </div>
+        <nav class="navbar navbar-left" style="position:fixed; background-color:#f8f8f8; height:100%;">
+            <div class="container-fluid">
+                <div class="navbar-default" id="myNavbar">
+                    <ul class="nav navbar-left" style="min-width:200px;">
+                        <li class="active">@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("Firma Data", "CompView", "Companies")</li>
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                        <li>@Html.ActionLink("TEST", "Index", "Home")</li>
+                        <li>@Html.ActionLink("TEST", "Companies", "Companies")</li>
+                        <li>@Html.ActionLink("TEST", "About", "Home")</li>
+                        <li>@Html.ActionLink("TEST", "Contact", "Home")</li>
+                    </ul>
+            </div>
+        </nav>
     
 
         <div class="container body-content">
