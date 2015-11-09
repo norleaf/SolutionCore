@@ -7,7 +7,7 @@ using System.Web.Http;
 
 namespace SolutionCore.Api
 {
-    public class ContactApiController : ApiController
+    public class ContactApiController : Api
     {
         DBDataContext db = new DBDataContext();
     }

@@ -1,5 +1,8 @@
-﻿using System;
+﻿using SolutionCore.Api;
+using SolutionCore.Models;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -10,6 +13,10 @@ namespace SolutionCore.Controllers
     {
         public ActionResult Index()
         {
+            //UserApiController usercontrol = new UserApiController();
+            //User user = new User { Email = "sdfhsdf", Firstname = "Frode", Lastname = "Glad", Password = "1235", Role = new Role { Id = 1 }, Username = "FrodeG" };
+            //Debug.WriteLine(usercontrol.CreateUser(user));
+
             return View();
         }
 
