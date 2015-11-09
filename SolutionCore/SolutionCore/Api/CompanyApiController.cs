@@ -10,9 +10,8 @@ using SolutionCore.Models;
 
 namespace SolutionCore.Api
 {
-    public class CompanyApiController : ApiController
+    public class CompanyApiController : Api
     {
-        DBDataContext db = new DBDataContext();
 
         public string DeleteCompany(int companyId)
         {

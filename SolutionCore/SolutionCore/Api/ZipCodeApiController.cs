@@ -2,14 +2,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
-using System.Web.Http;
 
 namespace SolutionCore.Api
 {
-    public class ZipCodeApiController : ApiController
+    public class ZipCodeApiController : Api
     {
-        DBDataContext db = new DBDataContext();
 
         public List<ZipCode> PullZipCodes()
         {
