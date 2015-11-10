@@ -10,5 +10,18 @@ namespace SolutionCore.Api
     public class Api : ApiController
     {
         public DBDataContext db = new DBDataContext();
+
+        public string Submit(string successMessage)
+        {
+            try
+            {
+                db.SubmitChanges();
+                return successMessage;
+            }
+            catch (Exception e)
+            {
+                return "Operationen mislykkedes. Hvis problemet forsætter kontakt IT-support med følgende fejlbesked: " + e.Message;
+            }
+        }
     }
 }

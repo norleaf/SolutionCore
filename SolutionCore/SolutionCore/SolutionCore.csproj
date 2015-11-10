@@ -122,6 +122,7 @@
     <Compile Include="Api\Api.cs" />
     <Compile Include="Api\ConfigApiController.cs" />
     <Compile Include="Api\ContactApiController.cs" />
+    <Compile Include="Api\RoleApiController.cs" />
     <Compile Include="Api\UserApiController.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />

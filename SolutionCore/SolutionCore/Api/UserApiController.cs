@@ -9,6 +9,24 @@ namespace SolutionCore.Api
 {
     public class UserApiController : Api
     {
+        public User GetUser(int userId)
+        {
+            var user = (from u in db.users
+                        where u.id == userId
+                        select new User
+                        {
+                            Id = u.id,
+                            Email = u.email,
+                            Firstname = u.firstname,
+                            Lastname = u.lastname,
+                            Password = u.password,
+                            Role = new Role { Id = u.role_id, AccessLevel = u.role.access_level, Name = u.role.name },
+                            Username = u.username
+                        }).First();
+
+            return user;
+        }
+
         public string EditUser(int userId, User newUser)
         {
             var user = (from u in db.users where u.id == userId select u).First();
@@ -31,30 +49,26 @@ namespace SolutionCore.Api
             user.password = newUser.Password;
             user.role_id = newUser.Role.Id;
             user.email = newUser.Email;
-            
+
             db.users.InsertOnSubmit(user);
 
             return Submit("Ny bruger oprettet.");
         }
 
-        public string DeleteUser(int userId)
+        public string DeleteUser(int userId, int loggedInAsUser = 2)
         {
-            var user = (from u in db.users where u.id == userId select u).First();
-            db.users.DeleteOnSubmit(user);
-            return Submit("Bruger slettet");
+            if (userId != loggedInAsUser)
+            {
+                var user = (from u in db.users where u.id == userId select u).First();
+                db.users.DeleteOnSubmit(user);
+                return Submit("Bruger slettet");
+            }
+            else
+            {
+                return "Du kan ikke slette din egen bruger.";
+            }
         }
 
-        public string Submit(string successMessage)
-        {
-            try
-            {
-                db.SubmitChanges();
-                return successMessage;
-            }
-            catch (Exception e)
-            {
-                return "Operationen mislykkedes. Hvis problemet forsætter kontakt IT-support med følgende fejlbesked: " + e.Message;
-            }
-        }
+
     }
 }
