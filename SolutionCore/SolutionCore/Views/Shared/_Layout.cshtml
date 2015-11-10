@@ -20,14 +20,7 @@
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li class="active">@Html.ActionLink("Home", "Index", "Home")</li>
-                        <li>@Html.ActionLink("Firma Data", "CompView", "Companies")</li>
-                        <li>@Html.ActionLink("About", "About", "Home")</li>
-                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                        <li>@Html.ActionLink("TEST", "Index", "Home")</li>
-                        <li>@Html.ActionLink("TEST", "Companies", "Companies")</li>
-                        <li>@Html.ActionLink("TEST", "About", "Home")</li>
-                        <li>@Html.ActionLink("TEST", "Contact", "Home")</li>
+                        @Html.Partial("_TopMenu")
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -43,14 +36,7 @@
             <div class="container-fluid">
                 <div class="navbar-default" id="myNavbar">
                     <ul class="nav navbar-left" style="min-width:200px;">
-                        <li class="active">@Html.ActionLink("Home", "Index", "Home")</li>
-                        <li>@Html.ActionLink("Firma Data", "CompView", "Companies")</li>
-                        <li>@Html.ActionLink("About", "About", "Home")</li>
-                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                        <li>@Html.ActionLink("TEST", "Index", "Home")</li>
-                        <li>@Html.ActionLink("TEST", "Companies", "Companies")</li>
-                        <li>@Html.ActionLink("TEST", "About", "Home")</li>
-                        <li>@Html.ActionLink("TEST", "Contact", "Home")</li>
+                        @Html.Partial("_LeftMenu")
                     </ul>
             </div>
         </nav>

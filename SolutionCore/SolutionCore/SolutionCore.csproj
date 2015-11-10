@@ -184,6 +184,8 @@
     <Content Include="Views\Companies\Companies.cshtml" />
     <Content Include="Views\Companies\_CompanyTile.cshtml" />
     <Content Include="Views\Companies\CompView.cshtml" />
+    <Content Include="Views\Shared\_LeftMenu.cshtml" />
+    <Content Include="Views\Shared\_TopMenu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
