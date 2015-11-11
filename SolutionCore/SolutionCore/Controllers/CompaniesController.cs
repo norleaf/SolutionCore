@@ -15,7 +15,6 @@ namespace SolutionCore.Controllers
         {
             CompanyApiController ctrl = new CompanyApiController();
             List<Company> companies = ctrl.PullCompanies();
-
             return View(companies);
         }
     }

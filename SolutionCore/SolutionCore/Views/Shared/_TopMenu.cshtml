@@ -1,0 +1,8 @@
+﻿@{
+    string url = Path.GetFileName(Request.Url.AbsolutePath);
+}
+
+<li class="@{if (url == ""){<text>active</text>}}">@Html.ActionLink("Home", "Index", "Home")</li>
+<li class="@{if (url == "CompView"){<text>active</text>}}">@Html.ActionLink("Firma Data", "CompView", "Companies")</li>
+<li class="@{if (url == "About"){<text>active</text>}}">@Html.ActionLink("About", "About", "Home")</li>
+<li class="@{if (url == "Contact"){<text>active</text>}}">@Html.ActionLink("Contact", "Contact", "Home")</li>
