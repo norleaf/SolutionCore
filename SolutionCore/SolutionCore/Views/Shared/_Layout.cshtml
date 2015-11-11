@@ -15,25 +15,10 @@
                 </div>
                 <div class="navbar-default" id="myNavbar">
                     <ul class="nav navbar-left" style="min-width:200px;">
-                        <li class="active">@Html.ActionLink("Home", "Index", "Home")</li>
-                        <li class="dropdown">
-                            <a class="dropdown"  href="/Companies/CompView">
-                                Firma Data
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Page 1-1</a></li>
-                                <li><a href="#">Page 1-2</a></li>
-                                <li><a href="#">Page 1-3</a></li>
-                            </ul>
-                        </li>
-                        <li>@Html.ActionLink("About", "About", "Home")</li>
-                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                        <li>@Html.ActionLink("TEST", "Index", "Home")</li>
-                        <li>@Html.ActionLink("TEST", "Companies", "Companies")</li>
-                        <li>@Html.ActionLink("TEST", "About", "Home")</li>
-                        <li>@Html.ActionLink("TEST", "Contact", "Home")</li>
+                        @Html.Partial("_LeftMenu")
                     </ul>
             </div>
+                </div>
         </nav>
     
         <div class="col-md-12 navbar container-fluid" style="margin-left: 202px; position:fixed; background-color:#f8f8f8;">
