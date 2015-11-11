@@ -1,0 +1,53 @@
+﻿@{
+    string url = Path.GetFileName(Request.Url.AbsolutePath);
+    string test = null;
+    if(url != "")
+    {
+        test = Request.Url.Segments[1].Replace("/", "");
+    }
+    else
+    {
+        test = "Home";
+    }
+
+
+}
+
+<li class="dropdown @{if (test == "Home") {<text>active navbar-collapse</text>} }">
+    @Html.ActionLink("Kontrolpanel", "Index", "Home")
+    @{if (test == "Home")
+        {<text>
+        <div class="panel panel-default">
+            <div class="panel-body">@Html.ActionLink("About", "About", "Home")</div>
+            <div class="panel-body">@Html.ActionLink("Contact", "Contact", "Home")</div>
+        </div>
+        </text>}
+        else
+        {
+            <text>
+                <ul class="dropdown-menu">
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+            </text>
+        }}
+</li>
+<li class="dropdown @{if (url == "CompView") {<text>active navbar-collapse</text>} }">
+    @Html.ActionLink("Firma Data", "CompView", "Companies")
+    @{if (url == "CompView")
+        {<text>
+    <div class="panel panel-default">
+        <div class="panel-body">A Basic Panel</div>
+        <div class="panel-body">A Basic Panel</div>
+        <div class="panel-body">A Basic Panel</div>
+    </div>
+    </text>} else {
+            <text>
+    <ul class="dropdown-menu">
+        <li><a href="#">Page 1-1</a></li>
+        <li><a href="#">Page 1-2</a></li>
+        <li><a href="#">Page 1-3</a></li>
+    </ul>
+    </text>
+            }}
+</li>

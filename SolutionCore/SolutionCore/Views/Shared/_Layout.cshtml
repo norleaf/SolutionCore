@@ -7,6 +7,7 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
+<<<<<<< HEAD
 <body>
 
     @*JUMBOTRON *@
@@ -86,6 +87,32 @@
     </div>
     <!-- /#wrapper -->
 
+=======
+    <body>
+        <nav class="navbar navbar-left" style="position:fixed; background-color:#f8f8f8; height:100%;">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">SolutionCore</a>
+                </div>
+                <div class="navbar-default" id="myNavbar">
+                    <ul class="nav navbar-left" style="min-width:200px;">
+                        @Html.Partial("_LeftMenu")
+                    </ul>
+            </div>
+                </div>
+        </nav>
+    
+        <div class="col-md-12 navbar container-fluid" style="margin-left: 202px; position:fixed; background-color:#f8f8f8;">
+            Test
+        </div>
+        <div class="container body-content" style="padding-top:50px;">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            </footer>
+        </div>
+>>>>>>> refs/remotes/origin/Kim
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

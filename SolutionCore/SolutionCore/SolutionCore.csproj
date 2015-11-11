@@ -134,6 +134,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Company.cs" />
+    <Compile Include="Models\MenuItem.cs" />
+    <Compile Include="Models\LeftMenu.cs" />
     <Compile Include="Models\Contact.cs" />
     <Compile Include="Models\DB.designer.cs">
       <AutoGen>True</AutoGen>
@@ -191,7 +193,12 @@
     <Content Include="Views\Companies\Companies.cshtml" />
     <Content Include="Views\Companies\_CompanyTile.cshtml" />
     <Content Include="Views\Companies\CompView.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\Config\Settings.cshtml" />
+=======
+    <Content Include="Views\Shared\_LeftMenu.cshtml" />
+    <Content Include="Views\Shared\_TopMenu.cshtml" />
+>>>>>>> refs/remotes/origin/Kim
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
