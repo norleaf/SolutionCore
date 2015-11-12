@@ -20,9 +20,6 @@ select,
 textarea {
     max-width: 280px;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
 .dropdown:hover .dropdown-menu {
     display: block;
@@ -33,7 +30,6 @@ textarea {
 li.dropdown.active{
     background-color:#eeeeee !important;
 
->>>>>>> refs/remotes/origin/Kim
 /*!
  * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
@@ -158,8 +154,6 @@ li.dropdown.active{
         position: relative;
         margin-right: 0;
     }
-<<<<<<< HEAD
-=======
 
 .dropdown:hover .dropdown-menu {
     display: block;
@@ -169,7 +163,4 @@ li.dropdown.active{
 
 li.dropdown.active{
     background-color:#eeeeee !important;
->>>>>>> refs/remotes/origin/Kim
-=======
->>>>>>> refs/remotes/origin/Kim
 }
