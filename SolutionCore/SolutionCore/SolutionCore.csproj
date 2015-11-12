@@ -194,10 +194,16 @@
     <Content Include="Views\Companies\_CompanyTile.cshtml" />
     <Content Include="Views\Companies\CompView.cshtml" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <Content Include="Views\Config\Settings.cshtml" />
 =======
     <Content Include="Views\Shared\_LeftMenu.cshtml" />
     <Content Include="Views\Shared\_TopMenu.cshtml" />
+>>>>>>> refs/remotes/origin/Kim
+=======
+    <Content Include="Views\Shared\_LeftMenu.cshtml" />
+    <Content Include="Views\Shared\_TopMenu.cshtml" />
+    <Content Include="Views\Config\Settings.cshtml" />
 >>>>>>> refs/remotes/origin/Kim
   </ItemGroup>
   <ItemGroup>
