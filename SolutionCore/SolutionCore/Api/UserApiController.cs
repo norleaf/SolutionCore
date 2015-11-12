@@ -9,6 +9,25 @@ namespace SolutionCore.Api
 {
     public class UserApiController : Api
     {
+        //Testet. Udskrev alle emails i en forløkke.
+        public List<User> GetUsers()
+        {
+            var users = (from u in db.users
+                         select new User
+                         {
+                             Id = u.id,
+                             Email = u.email,
+                             Firstname = u.firstname,
+                             Lastname = u.lastname,
+                             Password = u.password,
+                             Role = new Role { Id = u.role_id, AccessLevel = u.role.access_level, Name = u.role.name },
+                             RoleId = u.role_id,
+                             Username = u.username
+                         }).ToList();
+            return users;
+        }
+
+        //Testet. Hentet bruger id = 2 ud og aflæst navn og email
         public User GetUser(int userId)
         {
             var user = (from u in db.users
@@ -21,12 +40,14 @@ namespace SolutionCore.Api
                             Lastname = u.lastname,
                             Password = u.password,
                             Role = new Role { Id = u.role_id, AccessLevel = u.role.access_level, Name = u.role.name },
+                            RoleId = u.role_id,
                             Username = u.username
                         }).First();
 
             return user;
         }
 
+        //Testet. Ændring af fornavn
         public string EditUser(int userId, User newUser)
         {
             var user = (from u in db.users where u.id == userId select u).First();
@@ -40,6 +61,7 @@ namespace SolutionCore.Api
             return Submit("Bruger opdateret.");
         }
 
+        //Testet ved at lave en bruger og se at den blev tilføjet i databasen
         public string CreateUser(User newUser)
         {
             Models.user user = new user();
@@ -55,6 +77,7 @@ namespace SolutionCore.Api
             return Submit("Ny bruger oprettet.");
         }
 
+        //Testet både for at slette en bruger og at det ikke kan lade sig gøre at slette sin egen bruger
         public string DeleteUser(int userId, int loggedInAsUser = 2)
         {
             if (userId != loggedInAsUser)

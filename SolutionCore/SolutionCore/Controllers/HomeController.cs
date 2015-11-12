@@ -22,6 +22,12 @@ namespace SolutionCore.Controllers
             //Debug.WriteLine(user.Firstname + " " + user.Lastname + " " + user.Role.Name);
             //Debug.WriteLine(" ");
 
+            //UserApiController usercontrol = new UserApiController();
+            //User user = usercontrol.GetUser(2);
+            //user.Firstname = "Jarnis-Drengen";
+            //usercontrol.EditUser(user.Id,user);
+
+
             //RoleApiController rc = new RoleApiController();
             //var roles = rc.GetRoles();
             //foreach (Role r in roles)
@@ -36,9 +42,14 @@ namespace SolutionCore.Controllers
             // RoleApiController rac = new RoleApiController();
             // Debug.WriteLine(rac.DeleteRole(2));
 
-            UserApiController usercontrol = new UserApiController();
-            
-            Debug.WriteLine(usercontrol.DeleteUser(4));
+            //UserApiController usercontrol = new UserApiController();
+            //Debug.WriteLine(usercontrol.DeleteUser(4));
+
+            //UserApiController usercontrol = new UserApiController();
+            //foreach(User user in usercontrol.GetUsers())
+            //{
+            //    Debug.WriteLine(user.Email);
+            //}
 
             return View();
         }

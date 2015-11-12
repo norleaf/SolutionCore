@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
 
 namespace SolutionCore.Api
 {
@@ -45,6 +46,7 @@ namespace SolutionCore.Api
             return Submit("Rolle opdateret.");
         }
 
+        //testet. oprettet ny rolle "klovn"
         public string CreateRole(Role newRole)
         {
             role role = new role
@@ -71,6 +73,20 @@ namespace SolutionCore.Api
             {
                 return "Kan ikke slette administrator rollen.";
             }
+        }
+
+        public IEnumerable<SelectListItem> GetRoleList()
+        {
+            
+            var roles = GetRoles()
+                        .Select(x =>
+                                new SelectListItem
+                                {
+                                    Value = x.Id.ToString(),
+                                    Text = x.Name
+                                });
+
+            return new SelectList(roles, "Value", "Text");
         }
     }
 }

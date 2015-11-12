@@ -125,3 +125,7 @@ C:\Users\Mads Morsing\Desktop\SolutionCore\SolutionCore\SolutionCore\SolutionCor
 C:\Users\Mads Morsing\Desktop\SolutionCore\SolutionCore\SolutionCore\SolutionCore\obj\Debug\SolutionCore.dll
 C:\Users\Mads Morsing\Desktop\SolutionCore\SolutionCore\SolutionCore\SolutionCore\obj\Debug\SolutionCore.pdb
 C:\Users\Rauko\Documents\GitHub\SolutionCore\SolutionCore\SolutionCore\obj\Debug\SolutionCore.csprojResolveAssemblyReference.cache
+C:\Users\Hans\Documents\GitHub\SolutionCore\SolutionCore\SolutionCore\bin\EntityFramework.dll
+C:\Users\Hans\Documents\GitHub\SolutionCore\SolutionCore\SolutionCore\bin\EntityFramework.SqlServer.dll
+C:\Users\Hans\Documents\GitHub\SolutionCore\SolutionCore\SolutionCore\bin\EntityFramework.xml
+C:\Users\Hans\Documents\GitHub\SolutionCore\SolutionCore\SolutionCore\bin\EntityFramework.SqlServer.xml
