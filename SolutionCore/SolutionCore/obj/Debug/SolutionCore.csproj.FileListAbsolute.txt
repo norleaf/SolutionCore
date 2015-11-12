@@ -166,3 +166,5 @@ C:\Users\Rauko\Documents\GitHub\SolutionCore\SolutionCore\SolutionCore\bin\Antlr
 C:\Users\Rauko\Documents\GitHub\SolutionCore\SolutionCore\SolutionCore\bin\Newtonsoft.Json.xml
 C:\Users\Rauko\Documents\GitHub\SolutionCore\SolutionCore\SolutionCore\obj\Debug\SolutionCore.dll
 C:\Users\Rauko\Documents\GitHub\SolutionCore\SolutionCore\SolutionCore\obj\Debug\SolutionCore.pdb
+C:\Users\Rauko\Documents\GitHub\SolutionCore\SolutionCore\SolutionCore\bin\System.Web.Http.xml
+C:\Users\Rauko\Documents\GitHub\SolutionCore\SolutionCore\SolutionCore\bin\System.Net.Http.Formatting.xml

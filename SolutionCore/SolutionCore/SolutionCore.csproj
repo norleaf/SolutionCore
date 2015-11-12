@@ -119,23 +119,32 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Api\Api.cs" />
+    <Compile Include="Api\ConfigApiController.cs" />
     <Compile Include="Api\ContactApiController.cs" />
+    <Compile Include="Api\UserApiController.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Api\CompanyApiController.cs" />
     <Compile Include="Controllers\CompaniesController.cs" />
+    <Compile Include="Controllers\ConfigController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Company.cs" />
+    <Compile Include="Models\MenuItem.cs" />
+    <Compile Include="Models\LeftMenu.cs" />
     <Compile Include="Models\Contact.cs" />
     <Compile Include="Models\DB.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DB.dbml</DependentUpon>
     </Compile>
+    <Compile Include="Models\Role.cs" />
+    <Compile Include="Models\Settings.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Models\ZipCode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Api\ZipCodeApiController.cs" />
@@ -184,8 +193,12 @@
     <Content Include="Views\Companies\Companies.cshtml" />
     <Content Include="Views\Companies\_CompanyTile.cshtml" />
     <Content Include="Views\Companies\CompView.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\Shared\_LeftMenu.cshtml" />
     <Content Include="Views\Shared\_TopMenu.cshtml" />
+=======
+    <Content Include="Views\Config\Settings.cshtml" />
+>>>>>>> refs/remotes/origin/master
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
